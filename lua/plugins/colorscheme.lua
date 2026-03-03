@@ -1,12 +1,14 @@
 return {
-  -- add gruvbox
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    { "rose-pine/neovim", name = "rose-pine", priority = 1000 },
+    { "sainnhe/gruvbox-material", name = "gruvbox-material", priority = 1000 },
+    { "Mofiqul/dracula.nvim", name = "dracula", priority = 1000 },
 
-  -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
+    -- Configure LazyVim to load gruvbox
+    {
+        "LazyVim/LazyVim",
+        opts = {
+            colorscheme = "catppuccin",
+        },
     },
-  }
 }
