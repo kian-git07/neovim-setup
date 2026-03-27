@@ -1,4 +1,3 @@
-
 return {
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     { "rose-pine/neovim", name = "rose-pine", priority = 1000 },
@@ -7,10 +6,15 @@ return {
     -- This can be commented out
     {
         "navarasu/onedark.nvim",
-        version = "v0.1.0", -- Pin to legacy version
+                --version = "v0.1.0", -- Pin to legacy version
         priority = 1000,
         config = function()
             require('onedark').setup {
+            transparent = true,
+            styles = {
+                sidebars = "transparent",
+                floats = "transparent",
+            },
             style = 'darker'
         }
             require('onedark').load()
@@ -21,6 +25,11 @@ return {
     -- {
     --     "LazyVim/LazyVim",
     --     opts = {
+    --         transparent = true,
+    --         styles = {
+    --              sidebars = "transparent",
+    --              floats = "transparent",
+    --         },
     --         colorscheme = "rose-pine",
     --     },
     -- },
