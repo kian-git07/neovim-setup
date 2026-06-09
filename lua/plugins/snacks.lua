@@ -1,17 +1,17 @@
 return {
-  {
-    "folke/snacks.nvim",
-    opts = {
-      explorer = { enabled = false },
+    {
+        "folke/snacks.nvim",
+        opts = {
+            explorer = { enabled = false },
+        },
     },
-  },
-  {
-    "echasnovski/mini.files",
-    lazy = false,
-    opts = {
-      options = {
-        use_as_default_explorer = true,
-      },
+    {
+        "echasnovski/mini.files",
+        lazy = false,
+        opts = {
+            options = {
+                use_as_default_explorer = true,
+            },
+        },
     },
-  },
 }
