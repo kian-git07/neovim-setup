@@ -15,9 +15,9 @@
 -- -- --vim.cmd("set listchars=space:·,tab:->\n")
 
 vim.api.nvim_create_autocmd("VimEnter", {
-    callback = function()
-        if vim.fn.argc() == 0 then
-            require("mini.starter").open()
-        end
-    end,
+  callback = function()
+    if vim.fn.argc() == 0 then
+      require("mini.starter").open()
+    end
+  end,
 })
