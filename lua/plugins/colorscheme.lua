@@ -20,6 +20,10 @@ return {
             sidebars = transparent_enabled and "transparent" or "dark",
             floats = transparent_enabled and "transparent" or "dark"
           },
+          highlights = {
+            Comment = { fg = "#06402B", fmt = "italic" },
+            ["@comment"] = { fg = "#06402B", fmt = "italic" }
+          },
         })
         onedark.load()
       end
